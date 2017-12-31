@@ -1,19 +1,15 @@
-export class DomHelper {
-  constructor(document) {
-    this.document = document;
-  }
-
+export class DomFactory {
   appendTo(parent, child) {
     parent.appendChild(child);
   }
   
-  createElement(type, value) {
-    const el = this.document.createElement(type);
+  provide(type, value) {
+    const el = document.createElement(type);
     el.innerText = value;
     return el;
   }
 }
 
-const domHelper = new DomHelper(document);
-const el = domHelper.createElement('p', 'Paragraph text');
-domHelper.appendTo(document.body, el);
+const domFactory = new DomFactory();
+const el = domFactory.provide('p', 'Paragraph text');
+domFactory.appendTo(document.body, el);
