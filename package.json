@@ -1,0 +1,30 @@
+{
+  "name": "oop-vs-fp",
+  "version": "1.0.0",
+  "description": "Javascript comparison between OOP and FP",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjsanj/oop-vs-fp.git"
+  },
+  "keywords": [
+    "oop",
+    "fp",
+    "javascript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sanjsanj/oop-vs-fp/issues"
+  },
+  "homepage": "https://github.com/sanjsanj/oop-vs-fp#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "jest": "^22.0.4"
+  }
+}
