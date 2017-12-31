@@ -11,5 +11,5 @@ class Dom {
 }
 
 const dom = new Dom()
-const el = dom.createElement('p', 'some text')
+const el = dom.createElement('p', 'Paragraph text')
 dom.appendTo(document.body, el)
