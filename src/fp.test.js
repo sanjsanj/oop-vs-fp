@@ -1,1 +1,1 @@
-import {appendTo, createElement} from './fp';
+import { appendTo, createElement } from './fp';

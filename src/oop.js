@@ -1,15 +1,16 @@
-export class DomFactory {
-  appendTo(parent, child) {
+/* global document */
+
+export default class DomFactory {
+  static appendTo(parent, child) {
     parent.appendChild(child);
   }
-  
-  provide(type, value) {
+
+  static provide(type, value) {
     const el = document.createElement(type);
     el.innerText = value;
     return el;
   }
 }
 
-const domFactory = new DomFactory();
-const el = domFactory.provide('p', 'Paragraph text');
-domFactory.appendTo(document.body, el);
+const el = DomFactory.provide('p', 'Paragraph text');
+DomFactory.appendTo(document.body, el);

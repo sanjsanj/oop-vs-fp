@@ -1,8 +1,8 @@
-export const appendTo = parent => child => {
-  parent.appendChild(child);
-};
+/* global document */
 
-export const createElement = type => value => {
+export const appendTo = parent => child => parent.appendChild(child);
+
+export const createElement = type => (value) => {
   const el = document.createElement(type);
   el.innerText = value;
   return el;
