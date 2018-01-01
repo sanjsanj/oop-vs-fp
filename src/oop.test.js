@@ -4,9 +4,10 @@ import DomFactory from './oop';
 
 describe('DomFactory class', () => {
   it('can provide an element', () => {
+    const domFactory = new DomFactory(document);
     const el = document.createElement('p');
     el.innerText = 'Some text';
-    expect(DomFactory.provide('p', 'Some text')).toEqual(el);
+    expect(domFactory.provide('p', 'Some text')).toEqual(el);
   });
 
   it('can append child to parent', () => {
