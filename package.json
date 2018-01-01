@@ -6,16 +6,18 @@
   "scripts": {
     "start": "http-server",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "jsdoc": "jsdoc .\\src\\"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sanjsanj/oop-vs-fp.git"
   },
   "keywords": [
-    "oop",
-    "fp",
-    "javascript"
+    "object oriented",
+    "functional",
+    "javascript",
+    "jsdoc"
   ],
   "author": "",
   "license": "MIT",
@@ -30,6 +32,7 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
     "http-server": "^0.10.0",
-    "jest": "^22.0.4"
+    "jest": "^22.0.4",
+    "jsdoc": "^3.5.5"
   }
 }

@@ -2,8 +2,8 @@
 
 import DomFactory from './oop';
 
-describe('class Dom', () => {
-  it('can create an element', () => {
+describe('class DomFactory', () => {
+  it('can provide an element', () => {
     const el = document.createElement('p');
     el.innerText = 'Some text';
     expect(DomFactory.provide('p', 'Some text')).toEqual(el);
