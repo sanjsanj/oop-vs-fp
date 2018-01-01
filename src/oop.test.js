@@ -2,7 +2,7 @@
 
 import DomFactory from './oop';
 
-describe('class DomFactory', () => {
+describe('DomFactory class', () => {
   it('can provide an element', () => {
     const el = document.createElement('p');
     el.innerText = 'Some text';

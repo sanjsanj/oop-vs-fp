@@ -12,6 +12,7 @@ describe('Functional methods', () => {
   it('can append child to parent', () => {
     const parent = document.createElement('div');
     const child = document.createElement('p');
+    expect(parent.childNodes).not.toContain(child);
     appendTo(parent, child);
     expect(parent.childNodes).toContain(child);
   });
